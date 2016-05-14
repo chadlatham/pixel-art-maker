@@ -1,4 +1,90 @@
+body {
+  background-color: lightgrey;
+}
+
 h1 {
   color: red;
   font-family: 'Muli', sans-serif;
+  margin: 1rem;
 }
+
+header {
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+}
+
+.grid-container {
+  /*border: 1px solid blue;*/
+}
+
+.grid-border {
+  border: 1px solid black;
+  display: block;
+  margin: 0 auto;
+  width: 720px;
+  height: auto;
+  padding: 20px;
+  background-color: yellow;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.grid {
+    border: 1px solid black;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+}
+
+.cell {
+  display: inline-flex;
+  /*border-width: 1px 0 0 1px;
+  border-style: solid;
+  border-color: black;*/
+  /*width: 50%;*/
+  margin: 1px;
+  height: 10px;
+  /*border: 1px solid black;*/
+  background-color: white;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 10px;
+}
+
+/*@media(max-width: 1024px) {
+  .grid-border {
+    height: auto;
+    width: 800px;
+  }
+}
+
+@media(max-width: 960px) {
+  .grid-border {
+    height: auto;
+    width: 560px;
+  }
+}
+
+@media(max-width: 720px) {
+  .grid-border {
+    height: auto;
+    width: 480px;
+  }
+}
+
+@media(max-width: 600px) {
+  .grid-border {
+    height: auto;
+    width: 360px;
+  }
+}
+
+@media(max-width: 480px) {
+  .grid-border {
+    height: auto;
+    width: 280px;
+  }
+}*/

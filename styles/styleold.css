@@ -1,0 +1,90 @@
+h1 {
+  color: red;
+  font-family: 'Muli', sans-serif;
+}
+
+.grid-element {
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: black;
+  border-width: 0;
+}
+
+.grid-container {
+  border: 1px solid black;
+}
+
+.grid-border {
+  border: 1px solid black;
+  display: block;
+  margin: 0 auto;
+  width: 960px;
+  height: 960px;
+  padding: 10px;
+  background-color: yellow;
+}
+
+.grid {
+  display: flex;
+  margin: 0 auto;
+  border-width: 0 1px 1px 0;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: inherit;
+  height: inherit;
+}
+
+.row {
+  /*display: block;*/
+  /*position: relative;*/
+  /*height: 50%;*/
+  width: 100%;
+  /*flex: 1 1 auto;*/
+}
+
+.cell {
+  display: inline-flex;
+  border-width: 1px 0 0 1px;
+  /*width: 50%;*/
+  height: 100%;
+  background-color: white;
+}
+
+.row:nth-child(2n) {
+  background-color: grey;
+}
+
+@media(max-width: 1024px) {
+  .grid-border {
+    height: 800px;
+    width: 800px;
+  }
+}
+
+@media(max-width: 960px) {
+  .grid-border {
+    height: 560px;
+    width: 560px;
+  }
+}
+
+@media(max-width: 720px) {
+  .grid-border {
+    height: 480px;
+    width: 480px;
+  }
+}
+
+@media(max-width: 600px) {
+  .grid-border {
+    height: 360px;
+    width: 360px;
+  }
+}
+
+@media(max-width: 480px) {
+  .grid-border {
+    height: 280px;
+    width: 280px;
+  }
+}
