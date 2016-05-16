@@ -10,28 +10,36 @@
   </head>
   <body>
     <header>
-      <h1>Pixel Art Madness!</h1>
-      <p>Draw your best pixel-art and share with friends</p>
+      <img src="assets/pixel-art.png">
+      <p>Draw your best retro-style art</p>
     </header>
     <main>
       <section class="grid-container">
+        <nav class="primary-nav">
+          <h5>Colors</h5>
+          <div class="button color"></div>
+          <div class="button color"></div>
+          <div class="button color"></div>
+          <div class="button color"></div>
+          <div class="button color"></div>
+          <div class="button color"></div>
+          <input id="color-picker" type="color"  value="#FFFFFF" autocomplete>
+          <hr class="break">
+          <div class="button rectangle"></div>
+          <hr class="break">
+          <div class="button erase"></div>
+          <div class="button" id="reset">Reset</div>
+        </nav>
         <div class="grid-border grid-border-mobile">
           <section class="grid">
-          <!-- Dynamically generating this structure!-->
-            <!-- <div class="row grid-element">
-              <div class="cell grid-element"></div>
-              <div class="cell grid-element"></div>
-            </div>
-            <div class="row grid-element">
-              <div class="cell grid-element"></div>
-              <div class="cell grid-element"></div>
-            </div> -->
+            <!-- All the elements of this section are dynamically generated-->
           </section>
         </div>
       </section>
     </main>
     <footer>
-      <h3>This is the footer</h3>
+      <h3>Created by Chad Latham</h3>
+      <small>Student project ending week 2 at Galvanize Seattle</small>
     </footer>
   </body>
 </html>
