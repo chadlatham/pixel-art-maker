@@ -1,28 +1,24 @@
 body {
   background-color: #72b4b6;
+  color: #ffffff;
   font-family: 'Muli', sans-serif;
 }
 
 img {
   margin: .5rem 1rem;
   width: 400px;
-  height: 50px;
+  height: 40px;
   border: 1px solid black;
 }
 
-h1 {
-  color: #ff7552;
-  margin: .5rem 1rem;
-}
-
 h3 {
-  color: #ff7552;
-  margin: 1rem;
+  /*color: #ff7552;*/
+  margin: 1rem 0 0 0;
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: .5rem;
+  margin-top: .5rem;
+  margin-bottom: 0;
 }
 
 header {
@@ -33,7 +29,11 @@ footer {
   text-align: center;
 }
 
-/*Nav Bar selectors*/
+nav {
+  color: #000000;
+}
+
+/*Nav Bar selectors************************************************************/
 .primary-nav {
   display: inline-block;
   border-left: 1px solid black;
@@ -42,8 +42,6 @@ footer {
   border-bottom: 1px solid black;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
-  /*height: inherit;*/
-  /*background-color: yellow;*/
 }
 
 .button {
@@ -69,9 +67,6 @@ footer {
   cursor: pointer;
 }
 
-.color {
-}
-
 .erase {
   background-image: url(../assets/eraser.png);
   background-size: contain;
@@ -84,10 +79,6 @@ footer {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.rectangleActivated {
-  /*box-shadow: inset 0 0 1em gold, 0 0 1em red;*/
 }
 
 #color-picker {
@@ -112,10 +103,9 @@ nav :first-child {
 }
 
 
-/*Grid selectors*/
+/*Grid selectors***************************************************************/
 .grid-container {
   display: flex;
-  /*border: 1px solid blue;*/
   justify-content: center;
 }
 
@@ -128,7 +118,6 @@ nav :first-child {
   width: 720px;
   height: auto;
   padding: 20px 20px 20px 5px;
-  /*background-color: yellow;*/
   border-radius: 0 1rem 1rem 0;
 }
 
@@ -156,13 +145,13 @@ nav :first-child {
   display: inline-flex;
   margin: .5px;
   height: 10px;
-  /*border: 1px solid black;*/
   background-color: white;
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 10px;
 }
 
+/*Responsive Behavior**********************************************************/
 /*@media(max-width: 1024px) {
   .grid-border {
     height: auto;
